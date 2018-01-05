@@ -8,7 +8,7 @@
     "clean": "make clean",
     "package": "make package"
   },
-  "author": "",
+  "author": "Keegan Donley",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
