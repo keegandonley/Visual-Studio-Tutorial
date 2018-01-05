@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "make all",
-    "clean": "make clean"
+    "clean": "make clean",
+    "package": "make package"
   },
   "author": "",
   "license": "ISC",

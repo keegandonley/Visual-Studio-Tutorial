@@ -24,3 +24,5 @@ To build a specific tutorial only, refer to the following list:
 - Visual Studio Setup: `make vs_setup_win` or `make vs_setup_mac`
 
 To remove all generated PDFs, run `make clean` or `npm run clean`.
+
+To package up all rendered PDFs, run `make package` or `npm run package`.
