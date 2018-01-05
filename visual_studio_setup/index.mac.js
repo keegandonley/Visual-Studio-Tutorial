@@ -1,6 +1,6 @@
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Link } from '@react-pdf/core';
-import { Header, Section } from './components';
+import { Header, Section } from '../src/components';
 import ReactPDF from '../node_modules/@react-pdf/node/lib';
 
 // Create styles
