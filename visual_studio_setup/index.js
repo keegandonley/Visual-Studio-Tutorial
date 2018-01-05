@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Link } from '@react-pdf/core';
 import { Header, Section } from './components';
-import ReactPDF from './node_modules/@react-pdf/node/lib';
+import ReactPDF from '../node_modules/@react-pdf/node/lib';
 
 // Create styles
 const styles = StyleSheet.create({

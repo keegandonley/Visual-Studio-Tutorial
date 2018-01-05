@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel-node index.js && open ./vs_win.pdf"
+    "build": "make all",
+    "clean": "make clean"
   },
   "author": "",
   "license": "ISC",
