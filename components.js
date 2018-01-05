@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Text, View, StyleSheet } from '@react-pdf/core';
+import { Link, Text, View, StyleSheet, Image } from '@react-pdf/core';
 
 const styles = StyleSheet.create({
   container: {
@@ -39,16 +39,49 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     justifySelf: 'flex-end',
   },
+  stepSectionLeft: {
+    marginTop: 30,
+    marginLeft: '4%',
+    marginRight: '2%',
+    marginBottom: 0,
+    width: '44%',
+  },
+  stepSectionRight: {
+    marginTop: 30,
+    marginLeft: '2%',
+    marginRight: '4%',
+    marginBottom: 0,
+    width: '44%',
+  },
+  sectionHeader: {
+    fontSize: 12,
+    marginBottom: 10,
+  },
+  sectionContainer: {
+    flexDirection: 'row'
+  }
 });
 
-export default () => (
+export const Header = () => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
       <Text style={styles.name}>Visual Studio Tutorial</Text>
-      <Text style={styles.subtitle}>Windows (Community Edition)</Text>
+      <Text style={styles.subtitle}>Windows </Text>
     </View>
     <View style={styles.linkColumn}>
       <Link style={styles.link}>www.visualstudio.com/vs/community/</Link>
+    </View>
+  </View>
+);
+
+export const Section = (props) => (
+  <View style={styles.sectionContainer}>
+    <View style={styles.stepSectionLeft}>
+      <Text stye={styles.sectionHeader}>{props.index} - {props.title}</Text>
+      {props.children}
+    </View>
+    <View style={styles.stepSectionRight}>
+      <Image src={props.image} />
     </View>
   </View>
 );
