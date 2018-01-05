@@ -53,7 +53,7 @@ const MyDocument = (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
-        <Header> Visual Studio Tutorial </Header>
+        <Header mac> Visual Studio Tutorial </Header>
       </View>
       <View style={styles.section}>
         <Text style={styles.warning}>
@@ -122,4 +122,4 @@ const MyDocument = (
   </Document>
 );
 
-ReactPDF.render(MyDocument, `${__dirname}/vs_win.pdf`);
+ReactPDF.render(MyDocument, `${__dirname}/vs_setup_mac.pdf`);

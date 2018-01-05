@@ -62,11 +62,11 @@ const styles = StyleSheet.create({
   }
 });
 
-export const Header = () => (
+export const Header = (props) => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
       <Text style={styles.name}>Visual Studio Tutorial</Text>
-      <Text style={styles.subtitle}>Windows </Text>
+      <Text style={styles.subtitle}>{props.mac ? 'Mac OSX' : 'Windows'}</Text>
     </View>
     <View style={styles.linkColumn}>
       <Link style={styles.link}>www.visualstudio.com/vs/community/</Link>
