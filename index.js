@@ -122,4 +122,4 @@ const MyDocument = (
   </Document>
 );
 
-ReactPDF.render(MyDocument, `${__dirname}/output.pdf`);
+ReactPDF.render(MyDocument, `${__dirname}/vs_win.pdf`);
