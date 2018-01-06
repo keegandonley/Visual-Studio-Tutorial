@@ -65,8 +65,8 @@ const styles = StyleSheet.create({
 export const Header = (props) => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
-      <Text style={styles.name}>Visual Studio Tutorial</Text>
-      <Text style={styles.subtitle}>{props.mac ? 'Mac OSX' : 'Windows'}</Text>
+      <Text style={styles.name}>{props.children}</Text>
+      <Text style={styles.subtitle}>Visual Studio for {props.mac ? 'Mac OSX' : 'Windows'}</Text>
     </View>
     <View style={styles.linkColumn}>
       <Link style={styles.link}>www.visualstudio.com/vs/community/</Link>
@@ -81,7 +81,7 @@ export const Section = (props) => (
       {props.children}
     </View>
     <View style={styles.stepSectionRight}>
-      <Image src={props.image} />
+      <Image src={props.image}/>
     </View>
   </View>
 );

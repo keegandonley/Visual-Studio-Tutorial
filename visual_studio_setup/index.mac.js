@@ -55,7 +55,7 @@ const MyDocument = (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
-        <Header mac> Visual Studio Tutorial </Header>
+        <Header mac>Setting Up Visual Studio</Header>
       </View>
       <View style={styles.section}>
         <Text style={styles.warning}>
