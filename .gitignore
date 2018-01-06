@@ -10,6 +10,7 @@
 /build
 docs.tar
 *.pdf
+!examples/*.pdf
 
 # misc
 .DS_Store

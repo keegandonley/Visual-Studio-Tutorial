@@ -33,5 +33,6 @@ package:
 	find . -iname '*.pdf' -print0 | COPYFILE_DISABLE=1 xargs -0 tar -cf docs.tar
 	
 clean:
-	rm -f **/*.pdf
+	rm -f visual_studio_compile/*.pdf
+	rm -f visual_studio_setup/*.pdf
 	rm -f docs.tar
