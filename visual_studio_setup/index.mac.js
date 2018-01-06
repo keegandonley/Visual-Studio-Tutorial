@@ -32,6 +32,8 @@ const styles = StyleSheet.create({
     fontSize: 11,
     backgroundColor: '#F08080',
     marginTop: 5,
+    marginLeft: '4%',
+    marginRight: '4%',
     paddingTop: 5,
     paddingLeft: 5,
     paddingRight: 5,
@@ -59,6 +61,9 @@ const MyDocument = (
         <Text style={styles.warning}>
           If you already have the newest version of Visual Studio installed, you may skip to step 3.
         </Text>
+        <Text style={styles.danger}>
+          Note that Visual Studio for Mac does not support C++ development. For classes based in C++, the Mac version of Visual Studio is not suitable.
+        </Text>
         <Section
             index="1a"
             title="Download"
@@ -74,7 +79,7 @@ const MyDocument = (
           <Section
             index="1b"
             title="Install"
-            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/Windows/install.PNG"
+            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/MacOSX/install.PNG"
           >
                 <Text style={styles.body}>
                   Once the Visual Studio has been downloaded, run it to start the install. 
@@ -83,19 +88,19 @@ const MyDocument = (
           <Section
             index={2}
             title="Set Up"
-            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/Windows/setup.PNG"
+            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/MacOSX/setup.PNG"
           >
                 <Text style={styles.body}>
-                  You'll need to make sure to install the appropriate tools. You'll need the C++ tools, so make sure "Desktop development with C++" is checked, and then click Install. This will most likely take some time to complete.
+                  You'll need to make sure to install the appropriate tools. For desktop development, what you'll need is the option marked macOS. This will most likely take some time to complete.
                 </Text>
           </Section>
           <Section
             index="3a"
             title="Create a New Project"
-            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/Windows/new.PNG"
+            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/MacOSX/new.PNG"
           >
                 <Text style={styles.body}>
-                  Once the setup and installation has been completed, you'll want to create a new project. Under the file menu, select File -> New -> Project...
+                  Once the setup and installation has been completed, you'll want to create a new project. Select the "New Project..." button to get started.
                 </Text>
                 <Text style={styles.hint}>
                   Make sure you create a new project and not a new file.
@@ -108,13 +113,10 @@ const MyDocument = (
           <Section
             index="3b"
             title="Configure project"
-            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/Windows/empty.PNG"
+            image="https://grading-backups.s3.amazonaws.com/tutorials/vs_screenshots/MacOSX/config.PNG"
           >
                 <Text style={styles.body}>
-                  Next, you'll need to set the options for your project. On the left, under "Visual C++", select "Empty Project"
-                </Text>
-                <Text style={styles.danger}>
-                  Make sure you choose 'empty project' or you may have issues with later assignments.
+                  Next, you'll need to set the options for your project. On the left, under "Mac", select "App". Click next and enter your application's information.
                 </Text>
           </Section>
       </View>
