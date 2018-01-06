@@ -33,5 +33,5 @@ package:
 	find . -iname '*.pdf' -print0 | COPYFILE_DISABLE=1 xargs -0 tar -cf docs.tar
 	
 clean:
-	rm **/*.pdf
-	rm docs.tar
+	rm -f **/*.pdf
+	rm -f docs.tar

@@ -9,6 +9,7 @@
 # production
 /build
 docs.tar
+*.pdf
 
 # misc
 .DS_Store
