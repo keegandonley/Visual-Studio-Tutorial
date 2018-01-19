@@ -50,4 +50,5 @@ package:
 clean:
 	rm -f visual_studio_compile/*.pdf
 	rm -f visual_studio_setup/*.pdf
+	rm -f xcode/*.pdf
 	rm -f docs.tar
