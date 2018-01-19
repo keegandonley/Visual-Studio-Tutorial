@@ -1,8 +1,14 @@
 all:
 	make vs_setup
 	make vs_compile
+	make xcode_mac
+
+##############################
+######## Visual Studio #######
+##############################
 
 # Visual Studio Setup Tutorial
+
 vs_setup_win:
 	./node_modules/.bin/babel-node ./visual_studio_setup/index.win.js && [[ $$FILE_OPEN == 1 ]] && open ./visual_studio_setup/vs_setup_win.pdf || echo "not opening file..."
 
@@ -20,6 +26,15 @@ vs_compile_win:
 
 vs_compile:
 	make vs_compile_win
+
+##############################
+############ XCode ###########
+##############################
+
+# XCode Tutorial
+
+xcode_mac:
+	./node_modules/.bin/babel-node ./xcode/index.js && [[ $$FILE_OPEN == 1 ]] &&  open ./xcode/xcode.pdf || echo "not opening file..."
 
 # Specific Course Setup
 

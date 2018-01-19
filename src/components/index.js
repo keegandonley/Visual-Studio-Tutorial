@@ -66,13 +66,18 @@ export const Header = (props) => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
       <Text style={styles.name}>{props.children}</Text>
-      <Text style={styles.subtitle}>Visual Studio for {props.mac ? 'Mac OSX' : 'Windows'}</Text>
+      <Text style={styles.subtitle}>{props.xcode ? 'Xcode' : 'Visual Studio'} for {props.mac ? ' macOS' : 'Windows'}</Text>
     </View>
     <View style={styles.linkColumn}>
-      <Link style={styles.link}>www.visualstudio.com/vs/community/</Link>
+      <Link style={styles.link}>{props.xcode ? 'itunes.apple.com/us/app/xcode/id497799835' : 'www.visualstudio.com/vs/community/'}</Link>
     </View>
   </View>
 );
+
+function getImage(image) {
+  if (image) return <Image src={image}/>;
+  return '';
+}
 
 export const Section = (props) => (
   <View style={styles.sectionContainer}>
@@ -84,4 +89,13 @@ export const Section = (props) => (
       <Image src={props.image}/>
     </View>
   </View>
+);
+
+export const NoImageSection = (props) => (
+  <View style={styles.sectionContainer}>
+  <View style={styles.stepSectionLeft}>
+    <Text stye={styles.sectionHeader}>{props.index} - {props.title}</Text>
+    {props.children}
+  </View>
+</View>
 );

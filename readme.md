@@ -23,6 +23,7 @@ To build a specific tutorial only, refer to the following list:
 
 - Visual Studio Setup: `make vs_setup_win` or `make vs_setup_mac`
 - Visual Studio Compiling: `make vs_compile_win`
+- Xcode: `make xcode_mac`
 
 To remove all generated PDFs, run `make clean` or `npm run clean`.
 
